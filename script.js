@@ -1,5 +1,15 @@
 function firstNonRepeatedChar(str) {
- // Write your code here
+ // Write your code herelet
+	let charcount = {}
+	for(let i=0 ; i<str.length; i++){
+		let char = str[i];
+		if(charcount[char]===1){
+			return char;
+		}
+	}
+	return null;
+	
+	
 	const charCount = {};
 
   // Iterate through the string to count characters
